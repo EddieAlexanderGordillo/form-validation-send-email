@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/style/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header" class="header-container">
+        <h2>Enviar Nuevo Mail</h2>
+      </header>
+      <div class="form-container">
+        <form action="" id="send-mail"></form>
+        <div class="container-input">
+          <label for="email">Para: </label>
+          <input
+            type="email"
+            id="email"
+            class="input"
+            placeholder="Correo Electrónico"
+          />
+        </div>
+        <div class="container-input">
+          <label for="subject">Asunto</label>
+          <input
+            type="text"
+            id="subject"
+            class="input"
+            placeholder="Buen día"
+          />
+        </div>
+        <div class="container-input">
+          <label for="message">Mensaje</label>
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="5"
+            class="input"
+            placeholder="Escriba Aquí..."
+          ></textarea>
+        </div>
+        <div id="spinner">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="buttons-container">
+            <button id="send" class="button__send button" type="submit">
+              ENVIAR
+              <img src="../src/assests/icons/paper-plane-solid.svg" alt="" />
+            </button>
+            <button id="reset" class="button__reset button" type="submit">
+              RESETEAR FORM
+              <img src="../src/assests/icons/trash-solid.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

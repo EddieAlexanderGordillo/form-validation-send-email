@@ -1,0 +1,146 @@
+:root {
+    --almostWhite: #fafafa;
+    --mediumGray: hsl(0, 3%, 64%);
+    --almostBlack: hsl(0, 0%, 8%);
+    --header: #97266d;
+    --buttonPrimarySend: #98c0e6;
+    --buttonHoverSend: #4c9ce7;
+    --buttonPrimaryReset: #38a169;
+    --backroundBody: linear-gradient(80deg, rgba(24, 90, 157, 1) 0%, rgba(67, 206, 162, 1) 100%);
+}
+
+/* generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--backroundBody);
+}
+
+/* Formulario */
+main {
+    width: 80%;
+    margin: 150px auto;
+}
+
+.header-container {
+    width: 100%;
+    background-color: var(--header);
+    padding: 5px;
+}
+
+.header-container h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--almostWhite);
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--almostWhite);
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px;
+}
+
+
+
+.container-input {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.container-input label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 15px;
+
+}
+
+.container-input .input {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid var(--mediumGray);
+    box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: var(--mediumGray);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.buttons-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Botones Formulario */
+.button {
+    min-width: 230px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 20px 8px;
+    border: none;
+    border-radius: 5px;
+    color: var(--almostWhite);
+    text-align: center;
+}
+
+.buttons-container img {
+    width: 12px;
+    margin-left: 10px;
+    filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(221deg) brightness(97%) contrast(110%);
+}
+
+.button__send {
+    background-color: var(--buttonPrimarySend);
+    border: 1px solid var(--buttonPrimarySend);
+}
+
+.button__send:hover {
+    background-color: var(--buttonHoverSend);
+}
+
+.button__reset {
+    background-color: var(--buttonPrimaryReset);
+    border: 1px solid var(--buttonPrimaryReset);
+}
+
+@media (max-width: 420px) {
+    .button {
+        min-width: 130px;
+    }
+}
+
+@media (max-width: 720px) {
+    .buttons-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .button {
+
+        margin-bottom: 20px;
+
+    }
+}
