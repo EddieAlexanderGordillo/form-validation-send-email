@@ -18,8 +18,8 @@
       <header id="header" class="header-container">
         <h2>Enviar Nuevo Mail</h2>
       </header>
-      <div class="form-container">
-        <form action="" id="send-mail"></form>
+
+      <form id="send-mail" class="form-container">
         <div class="container-input">
           <label for="email">Para: </label>
           <input
@@ -50,26 +50,26 @@
           ></textarea>
         </div>
         <div id="spinner">
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="buttons-container">
-            <button id="send" class="button__send button" type="submit">
-              ENVIAR
-              <img src="../src/assests/icons/paper-plane-solid.svg" alt="" />
-            </button>
-            <button id="reset" class="button__reset button" type="submit">
-              RESETEAR FORM
-              <img src="../src/assests/icons/trash-solid.svg" alt="" />
-            </button>
+          <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
           </div>
         </div>
-      </div>
+        <div class="buttons-container">
+          <button id="send" class="button__send button" type="submit">
+            ENVIAR
+            <img src="../src/assests/icons/paper-plane-solid.svg" alt="" />
+          </button>
+          <button id="resetear" class="button__reset button" type="reset">
+            RESETEAR FORM
+            <img src="../src/assests/icons/trash-solid.svg" alt="" />
+          </button>
+        </div>
+      </form>
     </main>
     <script src="../src/index.js"></script>
   </body>
